@@ -1,0 +1,48 @@
+body {
+
+}
+
+.jumbotron h1 {
+	text-align: center;
+}
+
+
+.contender {
+	height: 250px;
+}
+.contender div {
+	border: green solid 2px;
+	max-width: 95%;
+	max-height: 175px;
+}
+.contender img {
+	background: black;
+	width: 100%;
+	margin-top: 10px;
+}
+.contender h3 {
+	border: red solid 2px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.row {
+/*	background-color: rgba(255, 230, 230, 0.5);
+*/	border: 1px dashed red;
+	stroke-dashoffset: 10;
+}
+
+[class*="col-"]{
+/*	background-color: rgba(230, 230, 255, 0.5);
+*/	border: 1px dashed blue;
+	stroke-dashoffset: 20;
+}
