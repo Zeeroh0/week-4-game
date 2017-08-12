@@ -2,19 +2,44 @@
 //Not a real issue on this project, but on a heavier load, it can be significant.
 $(document).ready(function () {
 	//Global variables
+	var increasedAttack;
+	var remainingHPAttacker;
+	var remainingHPDefender;
 	var yourCharacterSelect = false;
 	var defenderSelect = false;
 
+	//Character Profiles
+	var Revan {
+		Name: "Darth Revan",
+		HP: 120,
+		Attack: 15;
+		Retaliate: 40;
+	};
 
+	var Starkiller {
+		Name: "Starkiller",
+		HP: 90,
+		Attack: 25;
+		Retaliate: 30;
+	};
 
+	var Skywalker {
+		Name: "Jedi Anakin Skywalker",
+		HP: 110,
+		Attack: 25;
+		Retaliate: 40;
+	};
 
+	var Trooper {
+		Name: "Storm Trooper",
+		HP: 140,
+		Attack: 0;
+		//If Attack is <= 0, say the attack misses
+		Retaliate: 80;
+		//If Retaliate is >= 50, say something clever about using a thermal detonator or something
+	};
 
-
-
-
-
-
-
+	
 
 
 

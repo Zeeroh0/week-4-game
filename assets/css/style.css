@@ -1,9 +1,13 @@
 body {
 	background-image: url("../images/battlefield2.jpg");
+	margin: 0px;
+	padding: 0px;
 }
 
 #container {
-	margin-left: .75em;
+	margin: 0px 10px;
+	padding: 0px;
+	max-width: 1500px;
 }
 
 .jumbotron {
@@ -17,13 +21,15 @@ body {
 }
 .contender div {
 	border: green solid 2px;
-	max-width: 95%;
+	max-width: 100%;
 	max-height: 175px;
 }
 .contender img {
+	display: block;
+	margin: auto;
 	background: black;
-	width: 100%;
-	margin-top: 10px;
+	max-width: 100%;
+	max-height: 100%;
 }
 .contender h3 {
 	background: black;
