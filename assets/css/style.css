@@ -1,7 +1,7 @@
 body {
 	background-image: url("../images/battlefield2.jpg");
 	margin: 0px;
-	padding: 0px;
+	padding: 0px 0px 0px 10px;
 }
 
 #container {
@@ -40,10 +40,10 @@ body {
 }
 
 
-#yourCharacter h3, 
-#selectEnemy h3,
-#fightSection h3,
-#defender h3 {
+#yourCharacter h2, 
+#selectEnemy h2,
+#fightSection h2,
+#defender h2 {
 	color: black;
 }
 

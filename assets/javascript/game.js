@@ -9,42 +9,63 @@ $(document).ready(function () {
 	var defenderSelect = false;
 
 	//Character Profiles
-	var Revan {
+	var Revan = {
 		Name: "Darth Revan",
 		HP: 120,
-		Attack: 15;
-		Retaliate: 40;
+		Attack: 15,
+		Retaliate: 40,
 	};
 
-	var Starkiller {
+	var Starkiller = {
 		Name: "Starkiller",
 		HP: 90,
-		Attack: 25;
-		Retaliate: 30;
+		Attack: 25,
+		Retaliate: 30,
 	};
 
-	var Skywalker {
+	var Skywalker = {
 		Name: "Jedi Anakin Skywalker",
 		HP: 110,
-		Attack: 25;
-		Retaliate: 40;
+		Attack: 25,
+		Retaliate: 40,
 	};
 
-	var Trooper {
+	var Trooper = {
 		Name: "Storm Trooper",
 		HP: 140,
-		Attack: 0;
+		Attack: 0,
 		//If Attack is <= 0, say the attack misses
-		Retaliate: 80;
+		Retaliate: 80,
 		//If Retaliate is >= 50, say something clever about using a thermal detonator or something
 	};
 
 	
+	if (!yourCharacterSelect) {
+		$(".revan").on("click", function() {
+			$(".contender").css("display", "none");
+			$("#yourCharacter").html('<h2>Your Character</h2><div class="col-xs-6 col-md-3 contender revan"><div class="contender"><img src="assets/images/Revan.jpg" alt="Darth Revan"></div><h3>Darth Revan</h3></div>');
+			$("#selectEnemy").html('<h2>Chose your opponent.  Choose wisely.</h2><div class="col-xs-6 col-md-3 contender starkiller"><div class="contender"><img src="assets/images/starkiller.jpg" alt="Starkiller"></div><h3>Starkiller</h3></div><div class="col-xs-6 col-md-3 contender skywalker"><div class="contender"><img src="assets/images/anakin.jpg" alt="Jedi Anakin Skywalker"></div><h3>Jedi Anakin Skywalker</h3></div><div class="col-xs-6 col-md-3 contender trooper"><div class="contender"><img src="assets/images/trooper.jpg" alt="Storm Trooper"></div><h3>Stormtrooper</h3></div>');
+		})
+		$(".starkiller").on("click", function() {
+			$(".contender").css("display", "none");
+			$("#yourCharacter").html('<h2>Your Character</h2><div class="col-xs-6 col-md-3 contender starkiller"><div class="contender"><img src="assets/images/starkiller.jpg" alt="Starkiller"></div><h3>Starkiller</h3></div>');
+			$("#selectEnemy").html('<h2>Chose your opponent.  Choose wisely.</h2><div class="col-xs-6 col-md-3 contender revan"><div class="contender"><img src="assets/images/Revan.jpg" alt="Darth Revan"></div><h3>Darth Revan</h3></div><div class="col-xs-6 col-md-3 contender skywalker"><div class="contender"><img src="assets/images/anakin.jpg" alt="Jedi Anakin Skywalker"></div><h3>Jedi Anakin Skywalker</h3></div><div class="col-xs-6 col-md-3 contender trooper"><div class="contender"><img src="assets/images/trooper.jpg" alt="Storm Trooper"></div><h3>Stormtrooper</h3></div>');
+		})
+		$(".skywalker").on("click", function() {
+			$(".contender").css("display", "none");
+			$("#yourCharacter").html('<h2>Your Character</h2><div class="col-xs-6 col-md-3 contender skywalker"><div class="contender"><img src="assets/images/anakin.jpg" alt="Jedi Anakin Skywalker"></div><h3>Jedi Anakin Skywalker</h3></div>');
+			$("#selectEnemy").html('<h2>Chose your opponent.  Choose wisely.</h2><div class="col-xs-6 col-md-3 contender revan"><div class="contender"><img src="assets/images/Revan.jpg" alt="Darth Revan"></div><h3>Darth Revan</h3></div><div class="col-xs-6 col-md-3 contender starkiller"><div class="contender"><img src="assets/images/starkiller.jpg" alt="Starkiller"></div><h3>Starkiller</h3></div><div class="col-xs-6 col-md-3 contender trooper"><div class="contender"><img src="assets/images/trooper.jpg" alt="Storm Trooper"></div><h3>Stormtrooper</h3></div>');
+		})
+		$(".trooper").on("click", function() {
+			$(".contender").css("display", "none");
+			$("#yourCharacter").html('<h2>Your Character</h2><div class="col-xs-6 col-md-3 contender trooper"><div class="contender"><img src="assets/images/trooper.jpg" alt="Stormtrooper"></div><h3>Stormtrooper</h3></div>');
+			$("#selectEnemy").html('<h2>Chose your opponent.  Choose wisely.</h2><div class="col-xs-6 col-md-3 contender revan"><div class="contender"><img src="assets/images/Revan.jpg" alt="Darth Revan"></div><h3>Darth Revan</h3></div><div class="col-xs-6 col-md-3 contender starkiller"><div class="contender"><img src="assets/images/starkiller.jpg" alt="Starkiller"></div><h3>Starkiller</h3></div><div class="col-xs-6 col-md-3 contender skywalker"><div class="contender"><img src="assets/images/anakin.jpg" alt="Jedi Anakin Skywalker"></div><h3>Jedi Anakin Skywalker</h3></div>');
+		})
+	}
 
 
 
-
-
+//PSUEDO CODE ***************
 	//Global variables:
 		//each contender needs initial values for:
 			//Name
