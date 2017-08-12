@@ -1,11 +1,16 @@
 body {
-
+	background-image: url("../images/battlefield2.jpg");
 }
 
-.jumbotron h1 {
+#container {
+	margin-left: .75em;
+}
+
+.jumbotron {
 	text-align: center;
+	color: #eee;
+	background: black;
 }
-
 
 .contender {
 	height: 250px;
@@ -21,12 +26,20 @@ body {
 	margin-top: 10px;
 }
 .contender h3 {
+	background: black;
+	color: #eee;
 	border: red solid 2px;
 	text-align: center;
 	padding-top: 5px;
 }
 
 
+#yourCharacter h3, 
+#selectEnemy h3,
+#fightSection h3,
+#defender h3 {
+	color: black;
+}
 
 
 
@@ -35,14 +48,17 @@ body {
 
 
 
-.row {
-/*	background-color: rgba(255, 230, 230, 0.5);
-*/	border: 1px dashed red;
+
+
+/*.row {
+	background-color: rgba(255, 230, 230, 0.5);
+	border: 1px dashed red;
 	stroke-dashoffset: 10;
 }
 
 [class*="col-"]{
-/*	background-color: rgba(230, 230, 255, 0.5);
-*/	border: 1px dashed blue;
+	background-color: rgba(230, 230, 255, 0.5);
+	border: 1px dashed blue;
 	stroke-dashoffset: 20;
 }
+*/
