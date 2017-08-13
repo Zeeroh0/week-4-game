@@ -52,7 +52,8 @@ $(document).ready(function () {
 			defenderSelect = (false);
 			increasedAttack = Revan.Attack;
 			remainingHPAttacker = Revan.HP;
-			console.log("Darth Revan's Attack Value is " + increasedAttack + " and his starting health is " + remainingHPAttacker + ".")
+			$("#history").append("<h5>Darth Revans Attack Value is " + increasedAttack + " and his starting health is " +  remainingHPAttacker + ".</h5>");
+			$("#history").append("<h3>Pick your opponent.</h3>");
 		})
 		$(".starkiller").on("click", function() {
 			$(".beginHere").css("display", "none");
@@ -64,7 +65,8 @@ $(document).ready(function () {
 			defenderSelect = (false);
 			increasedAttack = Starkiller.Attack;
 			remainingHPAttacker = Starkiller.HP;
-			console.log("Starkiller's Attack Value is " + increasedAttack + " and his starting health is " + remainingHPAttacker + ".")
+			$("#history").append("<h5>Starkiller's Attack Value is " + increasedAttack + " and his starting health is " + remainingHPAttacker + ".</h5>");
+			$("#history").append("<h3>Pick your opponent.</h3>");
 		})
 		$(".skywalker").on("click", function() {
 			$(".beginHere").css("display", "none");
@@ -76,7 +78,8 @@ $(document).ready(function () {
 			defenderSelect = (false);
 			increasedAttack = Skywalker.Attack;
 			remainingHPAttacker = Skywalker.HP;
-			console.log("Jedi Anakin Skywalker's Attack Value is " + increasedAttack + " and his starting health is " + remainingHPAttacker + ".")
+			$("#history").append("<h5>Jedi Anakin Skywalker's Attack Value is " + increasedAttack + " and his starting health is " + remainingHPAttacker + ".</h5>");
+			$("#history").append("<h3>Pick your opponent.</h3>");
 		})
 		$(".trooper").on("click", function() {
 			$(".beginHere").css("display", "none");
@@ -88,7 +91,8 @@ $(document).ready(function () {
 			defenderSelect = (false);
 			increasedAttack = Trooper.Attack;
 			remainingHPAttacker = Trooper.HP;
-			console.log("The Strom Trooper's Attack Value is...unclear... His starting health is " + remainingHPAttacker + ".")
+			$("#history").append("<h5>The Strom Trooper's Attack Value is...unclear... His starting health is " + remainingHPAttacker + ".</h5>");
+			$("#history").append("<h3>Pick your opponent.</h3>");
 		})
 	};
 
@@ -98,32 +102,40 @@ $(document).ready(function () {
 			$("#opponent").append('<div class="col-xs-6 col-md-3 contender revan"><div class="contender"><img src="assets/images/Revan.jpg" alt="Darth Revan"></div><h3>Darth Revan</h3></div>');
 			remainingHPDefender = Revan.HP;
 			retaliate = Revan.Retaliate;
-			console.log("You've chosen a powerful enemy!  Darth Revan!! He has " + remainingHPDefender + " health and a fearsome " + retaliate + " counter attack!!  The possibility of successfully defeating this legened are approxamately  3,720 to 1!!")
+			$("#history").append("<h5>You've chosen a powerful enemy! <br> <b>Darth Revan!! He has " + remainingHPDefender + " health and a fearsome " + retaliate + " counter attack!!</b><br>  The possibility of successfully defeating this legened are approxamately  3,720 to 1!!</h5>")
 			defenderSelect = true;
+			$("#history").append("<h3>Click 'Attack' to proceed.</h3>");
+			$("#fightSection").css("display", "block");
 		})
 		$("#opponentStarkiller").on("click", function() {
 			$("#opponentStarkiller").css("display", "none");
 			$("#opponent").append('<div class="col-xs-6 col-md-3 contender starkiller"><div class="contender"><img src="assets/images/starkiller.jpg" alt="Starkiller"></div><h3>Starkiller</h3></div>');
 			remainingHPDefender = Starkiller.HP;
 			retaliate = Starkiller.Retaliate;
-			console.log("You MUST be losing your mind to take on this secret weapon of a warrior!  Starkiller!! He has " + remainingHPDefender + " health and a fearsome " + retaliate + " counter attack!!  I've got a bad feeling about this...")
+			$("#history").append("<h5>You MUST be losing your mind to take on this secret weapon of a warrior!<br> <b>Starkiller!! He has " + remainingHPDefender + " health and a fearsome " + retaliate + " counter attack!!</b><br> I've got a bad feeling about this...")
 			defenderSelect = true;
+			$("#history").append("<h3>Click 'Attack' to proceed.</h3>");
+			$("#fightSection").css("display", "block");
 		})
 		$("#opponentSkywalker").on("click", function() {
 			$("#opponentSkywalker").css("display", "none");
 			$("#opponent").append('<div class="col-xs-6 col-md-3 contender skywalker"><div class="contender"><img src="assets/images/anakin.jpg" alt="Jedi Anakin Skywalker"></div><h3>Jedi Anakin Skywalker</h3></div>');
 			remainingHPDefender = Skywalker.HP;
 			retaliate = Skywalker.Retaliate;
-			console.log("Seriously??  This guy was BORN of the force!! He has " + remainingHPDefender + " health and a fearsome " + retaliate + " counter attack!!  Whatever you do, just please don't mention sand...")
+			$("#history").append("<h5>Seriously??  This guy was BORN of the force!!<br> <b>He has " + remainingHPDefender + " health and a fearsome " + retaliate + " counter attack!!</b><br>  Just <b><i>please</i></b> don't mention sand...he never shuts up about it...</h5>")
 			defenderSelect = true;
+			$("#history").append("<h3>Click 'Attack' to proceed.</h3>");
+			$("#fightSection").css("display", "block");
 		})
 		$("#opponentTrooper").on("click", function() {
 			$("#opponentTrooper").css("display", "none");
 			$("#opponent").append('<div class="col-xs-6 col-md-3 contender trooper"><div class="contender"><img src="assets/images/trooper.jpg" alt="Strom Trooper"></div><h3>Stormtrooper</h3></div>');
 			remainingHPDefender = Trooper.HP;
 			retaliate = Trooper.Retaliate;
-			console.log("These bucketheads don't have the best aim w a blaster...doesn't make for much of a fight, I guess. He has " + remainingHPDefender + " health.  I think I heard some rumor about these guys having some heavy explosives, though...")
+			$("#history").append("<h5>These bucketheads don't have the best aim w a blaster...doesn't make for much of a fight, I guess.<br> <b>He has " + remainingHPDefender + " health.  I don't see anything here about his counter attack though. Strage.</b><br>  I think I heard some rumor about these guys having some heavy explosives, though...</h5>")
 			defenderSelect = true;
+			$("#history").append("<h3>Click 'Attack' to proceed.</h3>");
+			$("#fightSection").css("display", "block");
 		})
 
 	};

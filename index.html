@@ -10,7 +10,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- 	<style type="text/css">
+	<!-- <style type="text/css">
 		.row {
 			background-color: rgba(255, 230, 230, 0.5);
 			border: 1px dashed red;
@@ -25,85 +25,93 @@
 	</style> -->
 </head>
 <body>
-<!-- 	<div class="navbar navbar-default">Navbar, anyone?</div>
- -->	<div id="container">
+ 	<div id="container">
 
 		<div class="jumbotron">
 			<h1>Star Wars Melee!</h1>
 			<h2>Who will be left standing?</h2>
 		</div>
-
-		<div id="instructions"></div>
-
-		<div class="row">
-			<div class="beginHere">
-				<div class="col-xs-6 col-md-3 contender revan">
-					<div class="contender">
-						<!-- http://www.deviantart.com/art/Darth-Revan-686500645 -->
-						<img src="assets/images/Revan.jpg" alt="Darth Revan">
-					</div>
-					<h3 class="Name">Darth Revan</h3>
-				</div>
-				<div class="col-xs-6 col-md-3 contender starkiller">
-					<div class="contender">
-						<img src="assets/images/starkiller.jpg" alt="Starkiller">
-					</div>
-					<h3 class="Name">Starkiller</h3>
-				</div>
-				<div class="col-xs-6 col-md-3 contender skywalker">
-					<div class="contender">
-						<img src="assets/images/anakin.jpg" alt="Jedi Anakin Skywalker">
-					</div>
-					<h3 class="Name">Jedi Anakin Skywalker</h3>
-				</div>
-				<div class="col-xs-6 col-md-3 contender trooper">
-					<div class="contender">
-						<img src="assets/images/trooper.jpg" alt="Storm Trooper">
-					</div>
-					<h3 class="Name">Stormtrooper</h3>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div id="yourCharacter">
-				<h2>Your Character</h2>
-
-			</div>
-		</div>
-
-		<div class="row">
-			<div id="selectEnemy">
-				<h2>Chose your opponent.  Choose wisely.</h2>
-					<div id="opponentRevan"></div>
-					<div id="opponentStarkiller"></div>
-					<div id="opponentSkywalker"></div>
-					<div id="opponentTrooper"></div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div id="fightSection">
-				<h2>Fight Section</h2>
-				<button type="button" class="btn btn-danger attackBTN">Attack!</button>
-			</div>
-		</div>
-
-		<div class="row">
-			<div id="opponent">
-				<h2>Your Opponent</h2>
-					<div id="opponentRevan"></div>
-					<div id="opponentStarkiller"></div>
-					<div id="opponentSkywalker"></div>
-					<div id="opponentTrooper"></div>
-			</div>
-		</div>
 		
 		<div class="row">
-			<div class="reset"></div>
+						
+			<div class="col-xs-8 col-md-10 leftDisplay">
+				<div class="row">
+					<div class="beginHere">
+						<div class="col-xs-6 col-md-3 contender revan">
+							<div class="contender">
+								<!-- http://www.deviantart.com/art/Darth-Revan-686500645 -->
+								<img src="assets/images/Revan.jpg" alt="Darth Revan">
+							</div>
+							<h3 class="Name">Darth Revan</h3>
+						</div>
+						<div class="col-xs-6 col-md-3 contender starkiller">
+							<div class="contender">
+								<img src="assets/images/starkiller.jpg" alt="Starkiller">
+							</div>
+							<h3 class="Name">Starkiller</h3>
+						</div>
+						<div class="col-xs-6 col-md-3 contender skywalker">
+							<div class="contender">
+								<img src="assets/images/anakin.jpg" alt="Jedi Anakin Skywalker">
+							</div>
+							<h3 class="Name">Jedi Anakin Skywalker</h3>
+						</div>
+						<div class="col-xs-6 col-md-3 contender trooper">
+							<div class="contender">
+								<img src="assets/images/trooper.jpg" alt="Storm Trooper">
+							</div>
+							<h3 class="Name">Stormtrooper</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div id="yourCharacter">
+						<h2>Your Character</h2>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div id="selectEnemy">
+						<h2>Chose your opponent.  Choose wisely.</h2>
+							<div id="opponentRevan"></div>
+							<div id="opponentStarkiller"></div>
+							<div id="opponentSkywalker"></div>
+							<div id="opponentTrooper"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div id="fightSection">
+						<h2>Fight Section</h2>
+						<button type="button" class="btn btn-danger attackBTN">Attack!</button>
+					</div>
+				</div>
+
+				<div class="row">
+					<div id="opponent">
+						<h2>Your Opponent</h2>
+							<div id="opponentRevan"></div>
+							<div id="opponentStarkiller"></div>
+							<div id="opponentSkywalker"></div>
+							<div id="opponentTrooper"></div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="reset"></div>
+				</div>
+			</div>
+
+			<div class="col-xs-4 col-md-2 rightDisplay">
+				<div id="history">
+					<h2>Your Adventure:</h2>
+					<h3>(Pick your character.)</h3>
+				</div>
+			</div>
+
 		</div>
-
-
 
 	</div>
 
