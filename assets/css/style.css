@@ -43,7 +43,7 @@ body {
 #yourCharacter h2, 
 #selectEnemy h2,
 #fightSection h2,
-#defender h2 {
+#opponent h2 {
 	color: black;
 }
 
