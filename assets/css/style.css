@@ -7,7 +7,7 @@ body {
 #container {
 	margin: 0px 10px;
 	padding: 0px;
-	max-width: 1500px;
+	max-width: 1440px;
 }
 
 .jumbotron {
@@ -54,7 +54,8 @@ body {
 }
  #fightSection {
  	display: none;
- }
+/* 	max-height: 
+*/ }
 
 .rightDisplay {
 	border: black solid 2px;
@@ -68,7 +69,8 @@ body {
 
 
 
-
+/* ******** TO DO ********
+ 	Make the images div's have a black background so the image scaling isn't so ugly on smaller resolutions*/
 
 
 
