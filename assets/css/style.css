@@ -43,25 +43,40 @@ body {
 #yourCharacter h2, 
 #selectEnemy h2,
 #fightSection h2,
-#opponent h2 {
+#opponent h2,
+.reset h2 {
 	color: black;
 }
 
+
+
+ #fightSection {
+ 	display: none;
+  }
 .attackBTN {
 	background-color: red;
 	font-size: 24px;
 	padding: 15px 32px;
 }
- #fightSection {
+
+
+ .reset {
  	display: none;
-/* 	max-height: 
-*/ }
+  }
+.resetBTN {
+	background-color: yellow;
+	font-size: 24px;
+	padding: 15px 32px;
+}
+
 
 .rightDisplay {
 	border: black solid 2px;
 	background: #800000;
 	color: white;
 	text-shadow: 2px 2px black;
+	max-height: 1100px;
+	overflow: scroll;
 }
 
 
